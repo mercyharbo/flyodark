@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: hsl(217, 28%, 15%);
+  color: white;
+  line-height: 2;
+}
+
+header {
+  padding: 2% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: none;
+  padding: 0 10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: hsl(176, 68%, 64%);
+  text-decoration: underline;
+}
+
+/* SECURE FILES SECTION STYLING */
+
+#secure-files {
+  padding: 5% 0;
+  text-align: center;
+}
+
+.sf-content {
+  padding: 5% 0;
+  width: 50%;
+  margin: auto;
+}
+
+#secure-files img {
+  max-width: 100%;
+}
+
+.sf-content p {
+  width: 480px;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.top-btn {
+  background-color: hsl(198, 60%, 50%);
+  color: white;
+  padding: 2% 10%;
+  margin-top: 3%;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+}
+
+.top-btn:hover, .btn:hover {
+  background-color:  hsl(176, 68%, 64%);
+}
+
+/* The mountain background */
+.mountain-bg img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  top: 850px;
+  z-index: -1;
+}
+
+.main {
+  background-color: hsl(218, 28%, 13%);
+  position: relative;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  padding: 0 10%;
+  text-align: center;
+}
+
+.grid1 {
+  padding: 8% 10%;
+}
+
+.productive {
+  display: flex;
+  padding: 5%;
+  align-items: center;
+  gap: 10%;
+}
+
+.p-links {
+  color: hsl(176, 68%, 64%);
+  text-decoration: underline;
+}
+
+.p-links:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonies {
+  padding-bottom: 20%;
+}
+
+.testimonies-wrapper {
+  display: flex;
+  gap: 5%;
+  padding: 5%;
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  max-width: 20%;
+  left: 5%;
+  bottom: 30%;
+  z-index: 1;
+}
+
+.t-grid {
+  padding: 2% 2%;
+  background-color: hsl(219, 30%, 18%);
+  color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* The testimonie content containers  */
+
+.inner-grid {
+  display: flex;
+  width: 100%;
+  gap: 3%;
+  padding-top: 8%;
+  align-items: center;
+}
+
+/* The users image styling  section */
+
+.inner-grid img {
+  border-radius: 50%;
+  max-width: 60px;
+  height: 60px;
+}
+
+/* Newsletter section */
+
+.newsletter {
+  padding: 5% 15%;
+  position: absolute;
+  top: 1650px;
+  z-index: 2;
+}
+
+.newsletter-wrapper {
+  text-align: center;
+  padding: 5% 10%;
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 10px;
+}
+
+input {
+  width: 70%;
+  border: 0;
+  padding: 15px 5%;
+  border-radius: 40px;
+  margin-top: 5%;
+}
+
+input:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn {
+  border: 0;
+  color: white;
+  background-color: hsl(198, 60%, 50%);
+  padding: 15px 15px;
+  border-radius: 40px;
+  margin-left: 3%;
+}
+
+/* Footer beginings  */
+
+.footer-wrapper {
+  background-color: hsl(216, 53%, 9%);
+  padding-top: 5%;
+  position: relative;
+}
+
+footer {
+  padding: 7% 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 5%;
+  font-size: 14px;
+}
+
+.social-btn {
+  display: flex;
+  gap: 8%;
+}
+
+.attribution {
+  text-align: center;
+}
+
+/* footer ends here  */
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .brand-logo img {
+    max-width: 40%;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .sf-content {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .sf-content p {
+    width: 90%;
+  }
+
+  .top-btn {
+    width: 250px;
+    padding: 5%;
+    margin: 5% 0;
+  }
+
+  .mountain-bg img{
+    bottom: 1000px;
+    position: absolute;
+  }
+
+  .wrapper-grid {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 5% 0;
+  }
+
+  .grid1 {
+    padding: 10% 5%;
+  }
+
+  .productive {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+  }
+
+  .p-img img {
+    max-width: 100%;
+    padding: 10% 0;
+  }
+
+  .p-details {
+    padding: 5% 0;
+  }
+
+  .testimonies {
+    padding: 25% 0;
+  }
+
+  .testimonies-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    margin: 15% 0 80% 0;
+  }
+
+
+  .t-grid {
+    padding: 7%;
+    margin-bottom: 10%;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .newsletter {
+    top: 3130px;
+    padding: 10% 5%;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+
+  .newsletter-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  footer {
+    padding: 10% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    margin: 30% 0 5% 0;
+    font-size: 18px;
+  }
+
+  .fc-grids {
+    padding: 10% 0;
+  }
+
+  .icons {
+    padding-right: 5%;
+  }
+
+  .footer-nav {
+    padding: 5% 0;
+  }
+
+  .social-btn {
+    flex-direction: row;
+    align-self: center;
+    padding: 5% 0;
+    letter-spacing: 10px;
+  }
+
+  .attribution {
+    padding: 5% 0;
+  }
+}
